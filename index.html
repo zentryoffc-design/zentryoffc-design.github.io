@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bharti Global Exports - Reliable B2B Indian exporter of Psyllium Husk (Isabgol), Premium Makhana (Fox Nuts), and natural agricultural ingredients for international buyers.">
+  <title>Bharti Global Exports | Premium Indian Agricultural Exporter</title>
+
+  <!-- Google Fonts: Playfair Display & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Utility Bar -->
+  <div class="top-bar">
+    <div class="top-bar-container">
+      <div class="top-info">
+        <span>📍 Origin: <strong>India</strong></span>
+        <span>✉️ Email: <strong>sales@bhartiexports.me</strong></span>
+        <span>⚓ Primary Ports: <strong>Mundra / Nhava Sheva (JNPT)</strong></span>
+      </div>
+      <div class="top-badges-mini">
+        <span>🇮🇳 Direct Indian Sourcing</span>
+        <span>|</span>
+        <span>🌎 Exporting Worldwide</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo">
+        <div class="logo-badge">BGE</div>
+        <div class="brand-text">
+          <h1>BHARTI GLOBAL EXPORTS</h1>
+          <p>Indian Agricultural Exporter</p>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#products" class="nav-link">Products</a></li>
+          <li><a href="#about-us" class="nav-link">About Us</a></li>
+          <li><a href="#quality-process" class="nav-link">Quality & Process</a></li>
+          <li><a href="#export-markets" class="nav-link">Export Markets</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-outline" onclick="downloadCatalog()">📥 Download Catalog</button>
+        <button class="btn btn-primary" onclick="openQuoteModal()">Request Quote</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HOME PAGE / HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>🇮🇳</span> Authentic Indian Agricultural Exporter
+        </div>
+        <h1>BHARTI GLOBAL EXPORTS</h1>
+        <div class="hero-subtitle">Premium Indian Agricultural Products For Global Markets</div>
+        <p class="hero-description">
+          Reliable supplier of Psyllium Husk (Isabgol), Makhana (Fox Nuts) and natural food ingredients from India. Sourcing directly from verified agricultural processors to meet strict international food safety standards.
+        </p>
+
+        <div class="hero-ctas">
+          <button class="btn btn-gold btn-lg" onclick="openQuoteModal()">Request Quote →</button>
+          <button class="btn btn-outline-gold btn-lg" onclick="downloadCatalog()">Download Catalog (PDF)</button>
+        </div>
+
+        <!-- Small badges -->
+        <div class="trust-badges-grid">
+          <div class="badge-card">
+            <div class="badge-icon">🇮🇳</div>
+            <div class="badge-text">
+              <h4>India Origin</h4>
+              <p>Direct Sourcing Belt</p>
+            </div>
+          </div>
+          <div class="badge-card">
+            <div class="badge-icon">🌎</div>
+            <div class="badge-text">
+              <h4>Global Shipping</h4>
+              <p>FOB / CFR / CIF Terms</p>
+            </div>
+          </div>
+          <div class="badge-card">
+            <div class="badge-icon">📦</div>
+            <div class="badge-text">
+              <h4>Bulk Supply</h4>
+              <p>20ft & 40ft FCL Loads</p>
+            </div>
+          </div>
+          <div class="badge-card">
+            <div class="badge-icon">🤝</div>
+            <div class="badge-text">
+              <h4>Reliable Sourcing</h4>
+              <p>Processor Integrity</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick B2B Quote Card -->
+      <div class="hero-quick-card">
+        <h3>Direct B2B Inquiry</h3>
+        <p>Get a container quote or sample request within 24 hours.</p>
+        <form class="b2b-inquiry-form">
+          <div class="form-group">
+            <label class="form-label">Company Name *</label>
+            <input type="text" name="company" class="form-input" placeholder="e.g. NutraHealth Foods LLC" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Corporate Email *</label>
+            <input type="email" name="email" class="form-input" placeholder="buyer@company.com" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Product</label>
+              <select name="product" class="form-select">
+                <option value="Psyllium Husk">Psyllium Husk (Isabgol)</option>
+                <option value="Makhana">Premium Makhana (Fox Nuts)</option>
+                <option value="Both">Both Products</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Required Quantity</label>
+              <input type="text" name="quantity" class="form-input" placeholder="e.g. 1 FCL / 10 MT">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Inquiry Now</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS SECTION -->
+  <section id="products" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">EXPORT PRODUCTS</span>
+        <h2 class="section-title">Our Agricultural Products</h2>
+        <p class="section-subtitle">Sourced directly from verified Indian growers and processing facilities under hygienic B2B standards.</p>
+      </div>
+
+      <div class="products-grid">
+
+        <!-- Product 1: Psyllium Husk -->
+        <div class="product-card">
+          <div class="product-img-wrapper">
+            <img src="images/psyllium_husk.png" alt="Psyllium Husk Isabgol Indian Export">
+            <span class="product-badge-origin">🌱 Origin: India</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">
+              Psyllium Husk (Isabgol)
+              <span style="font-size: 0.9rem; color: #C99A2E; font-weight: normal;">HS: 12119032</span>
+            </h3>
+            <div class="product-subtitle">Plantago Ovata | Soluble Dietary Fiber</div>
+
+            <ul class="spec-list">
+              <li class="spec-item">
+                <div class="spec-label">Available Grades:</div>
+                <div class="spec-value">
+                  <div class="grade-chips">
+                    <span class="chip chip-gold">99% Purity</span>
+                    <span class="chip chip-gold">98% Purity</span>
+                    <span class="chip chip-gold">95% Purity</span>
+                  </div>
+                </div>
+              </li>
+              <li class="spec-item">
+                <div class="spec-label">Applications:</div>
+                <div class="spec-value">• Dietary Fiber &nbsp;• Nutraceuticals &nbsp;• Food & Bakery Industry</div>
+              </li>
+              <li class="spec-item">
+                <div class="spec-label">Swell Volume:</div>
+                <div class="spec-value">40 ml/g to 50+ ml/g (Based on grade purity)</div>
+              </li>
+              <li class="spec-item">
+                <div class="spec-label">Packaging:</div>
+                <div class="spec-value">25kg Multi-wall Paper Bags / PP Bags with inner liner. Custom packaging available.</div>
+              </li>
+            </ul>
+
+            <div class="product-footer">
+              <button class="btn btn-primary" onclick="openQuoteModal('Psyllium Husk')">Get Psyllium Quote →</button>
+              <button class="btn btn-outline" onclick="openSpecSheet('psyllium')">Technical Specs Sheet</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2: Premium Makhana -->
+        <div class="product-card">
+          <div class="product-img-wrapper">
+            <img src="images/premium_makhana.png" alt="Premium Makhana Indian Fox Nuts Export">
+            <span class="product-badge-origin">🌰 Origin: India</span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">
+              Premium Makhana
+              <span style="font-size: 0.9rem; color: #C99A2E; font-weight: normal;">HS: 19041090</span>
+            </h3>
+            <div class="product-subtitle">Indian Fox Nuts / Lotus Seeds</div>
+
+            <ul class="spec-list">
+              <li class="spec-item">
+                <div class="spec-label">Available Sizes:</div>
+                <div class="spec-value">
+                  <div class="grade-chips">
+                    <span class="chip chip-gold">6+ Suti (18mm+)</span>
+                    <span class="chip chip-gold">5+ Suti (15-17mm)</span>
+                    <span class="chip chip-gold">4+ Suti (12-14mm)</span>
+                  </div>
+                </div>
+              </li>
+              <li class="spec-item">
+                <div class="spec-label">Applications & Uses:</div>
+                <div class="spec-value">• Healthy Snacks &nbsp;• Health Foods &nbsp;• Retail & OEM Packaging</div>
+              </li>
+              <li class="spec-item">
+                <div class="spec-label">Quality:</div>
+                <div class="spec-value">100% Natural Popped, White & Crisp, Controlled Moisture (< 6%)</div>
+              </li>
+              <li class="spec-item">
+                <div class="spec-label">Packaging:</div>
+                <div class="spec-value">10kg Master Cartons with inner barrier liners / Custom retail options.</div>
+              </li>
+            </ul>
+
+            <div class="product-footer">
+              <button class="btn btn-primary" onclick="openQuoteModal('Makhana')">Get Makhana Quote →</button>
+              <button class="btn btn-outline" onclick="openSpecSheet('makhana')">Technical Specs Sheet</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">OUR ADVANTAGE</span>
+        <h2 class="section-title">Why Choose Us</h2>
+        <p class="section-subtitle">We bridge the gap between Indian processors and international food, pharmaceutical, and retail buyers.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">✓</div>
+          <h3>Direct Indian Sourcing</h3>
+          <p>Direct access to premier agricultural belts in Gujarat, Rajasthan, and Bihar ensures pure origin and batch consistency.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">✓</div>
+          <h3>Quality Focus</h3>
+          <p>Strict quality parameters for purity, moisture, swell volume, and cleanliness matched to customer specifications.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">✓</div>
+          <h3>Competitive Pricing</h3>
+          <p>Lean supply chain structure allows us to offer attractive FOB and CIF quotations directly from origin.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">✓</div>
+          <h3>Flexible Order Sizes</h3>
+          <p>Accommodating both spot container shipments and scheduled long-term bulk supply contracts.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon">✓</div>
+          <h3>Export Support</h3>
+          <p>Full support with customs clearance, Phytosanitary certificates, Certificates of Origin, and freight logistics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPORT PROCESS SECTION -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">TRANSPARENT WORKFLOW</span>
+        <h2 class="section-title">Export Process</h2>
+        <p class="section-subtitle">Simple, reliable 5-step export workflow designed for international trade ease.</p>
+      </div>
+
+      <div class="timeline-wrapper">
+        <div class="timeline-grid">
+          
+          <div class="timeline-step">
+            <div class="timeline-number">1</div>
+            <h4>Buyer Inquiry</h4>
+            <p>Send target specs, purity grade, required quantity, and destination port.</p>
+          </div>
+
+          <div class="timeline-step">
+            <div class="timeline-number">2</div>
+            <h4>Product Selection</h4>
+            <p>We match exact grade requirements (e.g. 99% Psyllium or 6+ Makhana).</p>
+          </div>
+
+          <div class="timeline-step">
+            <div class="timeline-number">3</div>
+            <h4>Quotation</h4>
+            <p>Firm FOB (Mundra/Nhava Sheva) or CIF destination port price quotation provided.</p>
+          </div>
+
+          <div class="timeline-step">
+            <div class="timeline-number">4</div>
+            <h4>Quality Approval</h4>
+            <p>Product spec validation, sample inspection, and payment term agreement.</p>
+          </div>
+
+          <div class="timeline-step">
+            <div class="timeline-number">5</div>
+            <h4>Shipment</h4>
+            <p>Container stuffing, plant quarantine inspection, BL dispatch, and tracking.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US SECTION -->
+  <section id="about-us" class="section">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+        <div>
+          <span class="section-tag">ABOUT OUR COMPANY</span>
+          <h2 class="section-title" style="margin-bottom: 20px;">Reliable Indian Sourcing Partner</h2>
+          <p style="font-size: 1.05rem; line-height: 1.8; color: #374151; margin-bottom: 20px;">
+            <strong>Bharti Global Exports</strong> is an India-based export company focused on supplying natural agricultural products to international buyers.
+          </p>
+          <p style="font-size: 0.98rem; line-height: 1.7; color: #4B5563; margin-bottom: 24px;">
+            We connect global businesses with trusted Indian suppliers and provide reliable sourcing solutions. By working closely with regional processors in primary growing belts, we ensure our clients receive consistent quality, transparent pricing, and dependable export shipping.
+          </p>
+          <div style="display: flex; gap: 16px;">
+            <button class="btn btn-primary" onclick="openQuoteModal()">Discuss Requirements</button>
+            <button class="btn btn-outline" onclick="downloadCatalog()">Company Catalog</button>
+          </div>
+        </div>
+
+        <div>
+          <div style="background: #FFFFFF; border-radius: 12px; border: 1px solid #E5E7EB; padding: 32px; box-shadow: 0 4px 16px rgba(11,61,46,0.08);">
+            <h3 style="font-size: 1.3rem; color: #0B3D2E; margin-bottom: 14px;">Our Core Commitment</h3>
+            <ul style="list-style: none;">
+              <li style="display: flex; gap: 10px; margin-bottom: 12px; font-size: 0.95rem;">
+                <span style="color: #C99A2E; font-weight: bold;">✔</span>
+                <span>Transparent communication from inquiry to port arrival</span>
+              </li>
+              <li style="display: flex; gap: 10px; margin-bottom: 12px; font-size: 0.95rem;">
+                <span style="color: #C99A2E; font-weight: bold;">✔</span>
+                <span>Product specifications provided upfront prior to booking</span>
+              </li>
+              <li style="display: flex; gap: 10px; margin-bottom: 12px; font-size: 0.95rem;">
+                <span style="color: #C99A2E; font-weight: bold;">✔</span>
+                <span>Standardized export packaging (25kg bags, 10kg cartons)</span>
+              </li>
+              <li style="display: flex; gap: 10px; font-size: 0.95rem;">
+                <span style="color: #C99A2E; font-weight: bold;">✔</span>
+                <span>Complete shipment documentation compliant with buyer country regulations</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUALITY & COA COMMITMENT SECTION -->
+  <section id="quality-process" class="section section-alt">
+    <div class="container">
+      <div class="quality-box">
+        <div class="quality-text">
+          <span style="color: #C99A2E; font-weight: bold; font-size: 0.85rem; letter-spacing: 1.5px;">QUALITY COMMITMENT</span>
+          <h3>Quality & Specification Assurance</h3>
+          <p>
+            We work with trusted processors and suppliers to ensure products meet buyer requirements. Product specifications and quality documents are provided based on customer needs.
+          </p>
+
+          <ul class="quality-checklist">
+            <li><span>✓</span> Batch Purity & Swell Volume Verification</li>
+            <li><span>✓</span> Controlled Moisture Content & Crispness Assurance</li>
+            <li><span>✓</span> Hygienic Packaging & Food Grade Inner Liners</li>
+            <li><span>✓</span> Phytosanitary & Plant Quarantine Compliance</li>
+          </ul>
+
+          <button class="btn btn-gold" onclick="openQuoteModal('Sample Request')">Request Sample & Spec Sheet</button>
+        </div>
+
+        <div class="quality-card-side">
+          <img src="images/quality_lab.png" alt="Quality Control Lab" style="border-radius: 8px; margin-bottom: 16px; height: 160px; width: 100%; object-fit: cover;">
+          <h4 style="font-size: 1.1rem; color: #FFFFFF; margin-bottom: 8px;">Export Documentation Included</h4>
+          <p style="font-size: 0.85rem; color: rgba(255,255,255,0.8); line-height: 1.6;">
+            • Bill of Lading (B/L)<br>
+            • Phytosanitary Certificate<br>
+            • Certificate of Origin (COO)<br>
+            • Commercial Invoice & Packing List<br>
+            • Batch Certificate of Analysis (COA)
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPORT MARKETS & FCL CONTAINER CALCULATOR -->
+  <section id="export-markets" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">LOGISTICS & MARKETS</span>
+        <h2 class="section-title">Global Shipping & Container Capacity</h2>
+        <p class="section-subtitle">We ship to major ports across North America, Europe, Middle East, Southeast Asia, and East Asia.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start;">
+        
+        <!-- FCL Load Calculator -->
+        <div style="background: #FFFFFF; border-radius: 12px; padding: 28px; border: 1px solid #E5E7EB; box-shadow: 0 4px 14px rgba(11,61,46,0.08);">
+          <h3 style="font-size: 1.3rem; color: #0B3D2E; margin-bottom: 6px;">Container Payload Estimator</h3>
+          <p style="font-size: 0.88rem; color: #6B7280; margin-bottom: 20px;">Select your target product and container size to view estimated export load capacities.</p>
+
+          <div class="form-row" style="margin-bottom: 16px;">
+            <div class="form-group" style="margin-bottom: 0;">
+              <label class="form-label">Product</label>
+              <select id="calc-product" class="form-select">
+                <option value="psyllium">Psyllium Husk (Isabgol)</option>
+                <option value="makhana">Premium Makhana (Fox Nuts)</option>
+              </select>
+            </div>
+            <div class="form-group" style="margin-bottom: 0;">
+              <label class="form-label">Container Type</label>
+              <select id="calc-container" class="form-select">
+                <option value="20ft">20ft FCL Container</option>
+                <option value="40ft">40ft HC FCL Container</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="calc-result-box" style="background: #F9F8F3; border: 1px solid #E6C875; padding: 18px; border-radius: 8px;">
+            <!-- Dynamic output populated by app.js -->
+          </div>
+        </div>
+
+        <!-- Global Ports Info -->
+        <div style="background: #FFFFFF; border-radius: 12px; padding: 28px; border: 1px solid #E5E7EB; box-shadow: 0 4px 14px rgba(11,61,46,0.08);">
+          <h3 style="font-size: 1.3rem; color: #0B3D2E; margin-bottom: 12px;">Port Logistics & Incoterms</h3>
+          
+          <ul style="list-style: none; font-size: 0.95rem; color: #4B5563; line-height: 2;">
+            <li>🚢 <strong>Loading Ports:</strong> Mundra Port (GJMUN) & Nhava Sheva (INBSA), India</li>
+            <li>📦 <strong>Incoterms Supported:</strong> FOB, CFR, CIF (Destination Port)</li>
+            <li>⏱️ <strong>Lead Time:</strong> 7 - 14 Days from order confirmation to port loading</li>
+            <li>📜 <strong>Customs Clearance:</strong> Full APEDA & Indian Customs export compliance</li>
+          </ul>
+
+          <div style="margin-top: 20px; padding-top: 16px; border-top: 1px dashed #E5E7EB;">
+            <strong style="color: #0B3D2E; font-size: 0.95rem;">Key Destination Regions Served:</strong>
+            <p style="font-size: 0.88rem; color: #6B7280; margin-top: 4px;">
+              USA & Canada • United Kingdom & European Union • UAE & GCC Region • Singapore, Malaysia & Southeast Asia • Japan & South Korea
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT PAGE / INQUIRY SECTION -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">GET IN TOUCH</span>
+        <h2 class="section-title">Let's Discuss Your Requirements</h2>
+        <p class="section-subtitle">Reach out directly for specifications, price quotations, or sample requests.</p>
+      </div>
+
+      <div class="contact-container">
+        
+        <!-- B2B RFQ Form -->
+        <div class="rfq-form-card">
+          <h3 style="font-size: 1.4rem; color: #0B3D2E; margin-bottom: 20px;">Request Container Quotation</h3>
+          <form class="b2b-inquiry-form">
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Full Name *</label>
+                <input type="text" name="name" class="form-input" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Company Name *</label>
+                <input type="text" name="company" class="form-input" placeholder="Company Name" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Country *</label>
+                <input type="text" name="country" class="form-input" placeholder="Buyer Country" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Corporate Email *</label>
+                <input type="email" name="email" class="form-input" placeholder="sales@company.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Product Required *</label>
+                <select name="product" class="form-select" required>
+                  <option value="Psyllium Husk (Isabgol)">Psyllium Husk (Isabgol)</option>
+                  <option value="Premium Makhana (Fox Nuts)">Premium Makhana (Fox Nuts)</option>
+                  <option value="Both Products">Both Products</option>
+                  <option value="Other Agricultural Products">Other Agricultural Products</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Required Quantity *</label>
+                <input type="text" name="quantity" class="form-input" placeholder="e.g., 20ft FCL / 10 MT" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Specific Requirements / Message</label>
+              <textarea name="message" class="form-textarea" rows="4" placeholder="Specify purity grade (e.g. 99% Psyllium), sizing (e.g. 6+ Makhana), target Incoterm (FOB or CIF), and port of destination..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Send Inquiry</button>
+          </form>
+        </div>
+
+        <!-- Direct Contact Info -->
+        <div class="contact-info-card">
+          <div>
+            <h3>Bharti Global Exports</h3>
+            <p style="color: rgba(255,255,255,0.85); font-size: 0.95rem; margin-bottom: 30px;">
+              Your reliable Indian sourcing partner for Psyllium Husk, Makhana, and raw natural food ingredients.
+            </p>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon">✉️</div>
+              <div>
+                <h4 style="color: var(--accent-gold); font-size: 0.9rem; margin-bottom: 2px;">Direct Sales Email</h4>
+                <p style="font-size: 1.1rem; font-weight: 600;">sales@bhartiexports.me</p>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h4 style="color: var(--accent-gold); font-size: 0.9rem; margin-bottom: 2px;">Headquarters Location</h4>
+                <p style="font-size: 1.05rem;">India</p>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon">🌐</div>
+              <div>
+                <h4 style="color: var(--accent-gold); font-size: 0.9rem; margin-bottom: 2px;">Export Supply Chain</h4>
+                <p style="font-size: 0.95rem;">Mundra Port & Nhava Sheva (JNPT) Port</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="background: rgba(0,0,0,0.2); padding: 20px; border-radius: 8px; border: 1px solid rgba(201,154,46,0.3);">
+            <strong style="color: var(--accent-gold); font-size: 0.9rem; display: block; margin-bottom: 6px;">Fast Response Commitment</strong>
+            <p style="font-size: 0.85rem; color: rgba(255,255,255,0.8);">
+              All buyer inquiries receive a formal technical response and price quotation within 24 hours.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MODALS -->
+
+  <!-- 1. Spec Sheet Modal -->
+  <div id="spec-modal" class="modal-backdrop">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('spec-modal')">×</button>
+      <h3 id="modal-spec-title" class="font-heading" style="font-size: 1.5rem; margin-bottom: 16px;">Product Specifications</h3>
+      <div id="modal-spec-body">
+        <!-- Loaded dynamically via app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. RFQ Modal -->
+  <div id="rfq-modal" class="modal-backdrop">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('rfq-modal')">×</button>
+      <h3 class="font-heading" style="font-size: 1.5rem; color: #0B3D2E; margin-bottom: 6px;">Request Formal Quotation</h3>
+      <p style="font-size: 0.88rem; color: #6B7280; margin-bottom: 20px;">Provide your order details to receive an official FOB or CIF quotation.</p>
+      
+      <form class="b2b-inquiry-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Full Name *</label>
+            <input type="text" name="name" class="form-input" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Company Name *</label>
+            <input type="text" name="company" class="form-input" placeholder="Company Name" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Corporate Email *</label>
+            <input type="email" name="email" class="form-input" placeholder="sales@company.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Destination Country & Port *</label>
+            <input type="text" name="country" class="form-input" placeholder="e.g. Hamburg, Germany" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Product</label>
+            <select id="rfq-product-select" name="product" class="form-select">
+              <option value="Psyllium Husk (Isabgol)">Psyllium Husk (Isabgol)</option>
+              <option value="Premium Makhana (Fox Nuts)">Premium Makhana (Fox Nuts)</option>
+              <option value="Both Products">Both Products</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Quantity Required</label>
+            <input type="text" name="quantity" class="form-input" placeholder="e.g. 1 x 20ft FCL">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Submit Official RFQ</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div>
+          <h4 class="font-heading" style="color: var(--accent-gold); font-size: 1.3rem;">BHARTI GLOBAL EXPORTS</h4>
+          <p style="font-size: 0.88rem; line-height: 1.6; color: rgba(255,255,255,0.7); margin-top: 10px; margin-bottom: 16px;">
+            Reliable supplier of Psyllium Husk (Isabgol), Makhana and natural food ingredients from India to global markets.
+          </p>
+          <p style="font-size: 0.82rem; color: var(--accent-gold);">
+            🇮🇳 Direct Origin Sourcing &nbsp;|&nbsp; 📜 Specification Compliance
+          </p>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Our Products</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#quality-process">Quality Commitment</a></li>
+            <li><a href="#export-markets">Export Markets</a></li>
+            <li><a href="#contact">Request Quote</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Products</h4>
+          <ul class="footer-links">
+            <li><a href="#products" onclick="openSpecSheet('psyllium')">Psyllium Husk 99% Pure</a></li>
+            <li><a href="#products" onclick="openSpecSheet('psyllium')">Psyllium Husk 98% Pure</a></li>
+            <li><a href="#products" onclick="openSpecSheet('psyllium')">Psyllium Husk 95% Pure</a></li>
+            <li><a href="#products" onclick="openSpecSheet('makhana')">Makhana 6+ Extra Large</a></li>
+            <li><a href="#products" onclick="openSpecSheet('makhana')">Makhana 5+ Large Grade</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Corporate Contact</h4>
+          <p style="font-size: 0.88rem; margin-bottom: 8px;"><strong>Bharti Global Exports</strong></p>
+          <p style="font-size: 0.88rem; color: rgba(255,255,255,0.7); margin-bottom: 8px;">Origin: India</p>
+          <p style="font-size: 0.88rem; color: var(--accent-gold); margin-bottom: 14px;">Email: sales@bhartiexports.me</p>
+          <button class="btn btn-outline-gold btn-sm" onclick="downloadCatalog()">Download B2B Catalog</button>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Bharti Global Exports. All Rights Reserved.</p>
+        <p>Premium Indian Agricultural Exporter | Psyllium Husk & Makhana Supplier</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
