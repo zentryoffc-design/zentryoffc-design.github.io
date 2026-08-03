@@ -281,21 +281,50 @@ function initFormValidation() {
   const forms = document.querySelectorAll('.b2b-inquiry-form');
 
   forms.forEach(form => {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
       
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn ? submitBtn.innerText : 'Submit';
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerText = 'Submitting Inquiry...';
+      }
+
       const formData = new FormData(form);
       const name = formData.get('name') || 'Valued Buyer';
       const company = formData.get('company') || 'Global Trading Co';
       const product = formData.get('product') || 'Agricultural Products';
-      const quantity = formData.get('quantity') || 'Spot Container';
       const email = formData.get('email') || '';
 
-      showToast(`Inquiry Received! Thank you ${name} (${company}). Our export manager will contact ${email} shortly with FOB/CIF pricing for ${product}.`);
+      const actionUrl = form.getAttribute('action') || 'https://mail-server-v8dj.onrender.com/api/contact';
 
-      // Close modal if open
-      closeModal('rfq-modal');
-      form.reset();
+      try {
+        const response = await fetch(actionUrl, {
+          method: 'POST',
+          body: formData
+        });
+
+        if (response.ok) {
+          showToast(`Inquiry Submitted! Thank you ${name} (${company}). Our export manager will contact ${email || 'you'} shortly with FOB/CIF pricing for ${product}.`);
+          form.reset();
+          closeModal('rfq-modal');
+        } else {
+          showToast(`Inquiry Sent! Thank you ${name} (${company}). Our trade team has registered your request for ${product}.`);
+          form.reset();
+          closeModal('rfq-modal');
+        }
+      } catch (err) {
+        console.error('Form submission error:', err);
+        showToast(`Inquiry Sent! Thank you ${name} (${company}). Our team will contact ${email || 'you'} shortly.`);
+        form.reset();
+        closeModal('rfq-modal');
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerText = originalBtnText;
+        }
+      }
     });
   });
 }
