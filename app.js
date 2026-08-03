@@ -292,17 +292,24 @@ function initFormValidation() {
       }
 
       const formData = new FormData(form);
-      const name = formData.get('name') || 'Valued Buyer';
-      const company = formData.get('company') || 'Global Trading Co';
-      const product = formData.get('product') || 'Agricultural Products';
-      const email = formData.get('email') || '';
+      const jsonPayload = {};
+      formData.forEach((val, key) => { jsonPayload[key] = val; });
+
+      const name = jsonPayload.name || jsonPayload.company || 'Valued Buyer';
+      const company = jsonPayload.company || 'Global Trading Co';
+      const product = jsonPayload.product || 'Agricultural Products';
+      const email = jsonPayload.email || '';
 
       const actionUrl = form.getAttribute('action') || 'https://mail-server-v8dj.onrender.com/api/contact';
 
       try {
         const response = await fetch(actionUrl, {
           method: 'POST',
-          body: formData
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(jsonPayload)
         });
 
         if (response.ok) {
