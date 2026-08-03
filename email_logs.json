@@ -1,0 +1,13 @@
+[
+  {
+    "timestamp": "2026-08-03T10:11:45.741044Z",
+    "direction": "outbound",
+    "sender": "Bharti Global Exports <sales@bhartiexports.me>",
+    "recipient": [
+      "test.buyer@example.com"
+    ],
+    "subject": "Inquiry Confirmation \u2014 Bharti Global Exports [Psyllium Husk 99%]",
+    "status": "error",
+    "details": "{'statusCode': 401, 'name': 'validation_error', 'message': 'API key is invalid'}"
+  }
+]
